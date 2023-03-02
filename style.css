@@ -1,0 +1,145 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+    border: none;
+}
+
+.first-card{
+    background-color: var(--Bright-orange);
+    color: var(--Transparent-white-paragraphs);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding: 40px;
+}
+
+img{
+    padding-bottom: 20px;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.second-card{
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white-paragraphs);
+    border: none;
+    padding: 40px;
+}
+
+.third-card{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Transparent-white-paragraphs);
+    border: none;
+    padding: 40px;
+    border-radius: 0 0 10px 10px;
+}
+
+p{
+    color: var(--Transparent-white-paragraphs);
+    padding: 20px 0;
+    font-size: 10px;
+    width: 150px;
+    line-height: 20px;
+}
+
+.btn{
+    width: auto;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 12px;
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    padding: .6rem 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.first-card .btn{
+    color: var(--Bright-orange);
+}
+
+.second-card .btn{
+    color: var(--Dark-cyan);
+}
+
+.third-card .btn{
+    color: var(--Very-dark-cyan);
+}
+
+.first-card .btn:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.second-card .btn:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.third-card .btn:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+@media (min-width:480px){
+    
+    
+    .container{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .first-card{
+        border-radius: 10px 0 0 10px;
+        border: none;
+    }
+
+    .second-card{
+        border: none;
+        border-radius: 0;
+    }
+
+    .third-card{
+        border: none;
+        border-radius: 0 10px 10px 0;
+    }
+
+    p{  
+        margin-bottom: 33px;
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+}
+
